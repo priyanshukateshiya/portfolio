@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='30%25'%3E%3Cstop offset='0%25' stop-color='%23b49bff'/%3E%3Cstop offset='100%25' stop-color='%236a42ff'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cpath d='M18 44V20h8.5c6.7 0 11.3 3.9 11.3 12s-4.6 12-11.3 12H18Zm7-6h2.9c3.9 0 6.7-2.2 6.7-6s-2.8-6-6.7-6H25v12Z' fill='white'/%3E%3C/svg%3E">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive Portfolio</title>
+   </head>
+   <body>
+      <!-- Custom cursor (desktop only) -->
+      <div class="cursor" id="cursor" aria-hidden="true"></div>
+      <div class="cursor__dot" id="cursorDot" aria-hidden="true"></div>
+
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container" aria-label="Primary">
+            <a href="#home" class="nav__logo">
+               <span class="nav__logo-dot" aria-hidden="true"></span>
+               <span class="nav__logo-text">Portfolio</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                  <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+               </ul>
+
+               <button class="nav__close" id="nav-close" type="button" aria-label="Close menu">
+                  <i class="ri-close-line" aria-hidden="true"></i>
+               </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu">
+               <i class="ri-menu-4-line" aria-hidden="true"></i>
+            </button>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <p class="home__subtitle">Hi, I’m</p>
+                  <h1 class="home__title" data-split>
+                     <span class="home__title-accent">Priyanshu Kateshiya</span>
+                     <br>
+                     App & Web Developer
+                  </h1>
+                  <p class="home__description">
+                     I build fast, modern, responsive websites with clean UI, smooth motion, and good UX.
+                  </p>
+
+                  <div class="home__buttons">
+                     <a href="#projects" class="button">See projects</a>
+                     <a href="#contact" class="button button--ghost">Contact me</a>
+                  </div>
+
+                  <div class="home__social" aria-label="Social links">
+                     <a class="home__social-link" href="https://github.com/priyanshukateshiya" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <i class="ri-github-line" aria-hidden="true"></i>
+                     </a>
+                     <a class="home__social-link" href="https://linkedin.com/in/priyanshu-kateshiya" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <i class="ri-linkedin-line" aria-hidden="true"></i>
+                     </a>
+                     <a class="home__social-link" href="https://instagram.com/impriyansh_013" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__visual">
+                  <img class="home__profile" src="assets/img/priyanshu-removebg-preview.png" alt="Priyanshu Kateshiya profile photo" onerror="this.onerror=null;this.src='assets/img/profile.svg';">
+                  <div class="blob"></div>
+                  <div class="home__card">
+                     <div class="home__card-top">
+                        <span class="chip">Available for work</span>
+                        <span class="chip chip--muted">Remote</span>
+                     </div>
+                     <div class="home__card-body">
+                        <p class="home__stat"><span>3+</span> years building UI</p>
+                        <p class="home__stat"><span>10+</span> projects shipped</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <h2 class="section__title">About <span>me</span></h2>
+
+            <div class="about__container container grid">
+               <div class="about__content">
+                  <p class="about__text">
+                     I’m a Flutter, Android & Web Developer. I build responsive websites and cross‑platform mobile apps
+                     with clean UI, smooth performance, and great user experience.
+                  </p>
+
+                  <ul class="about__list">
+                     <li class="about__item"><i class="ri-check-line" aria-hidden="true"></i> Flutter apps (Android/iOS)</li>
+                     <li class="about__item"><i class="ri-check-line" aria-hidden="true"></i> Android development</li>
+                     <li class="about__item"><i class="ri-check-line" aria-hidden="true"></i> Modern responsive web UI</li>
+                  </ul>
+
+                  <div class="about__skills">
+                     <span class="tag">Flutter</span>
+                     <span class="tag">Dart</span>
+                     <span class="tag">Android</span>
+                     <span class="tag">Web Development</span>
+                  </div>
+               </div>
+
+               <div class="about__card" aria-label="Quick facts">
+                  <img class="about__profile" src="assets/img/priyanshu-removebg-preview.png" alt="Priyanshu Kateshiya profile photo" onerror="this.onerror=null;this.src='assets/img/profile.svg';">
+                  <div class="about__card-row">
+                     <span class="about__label">Location</span>
+                     <span class="about__value">India</span>
+                  </div>
+                  <div class="about__card-row">
+                     <span class="about__label">Email</span>
+                     <span class="about__value">kateshiyapriyanshu8@email.com</span>
+                  </div>
+                  <div class="about__card-row">
+                     <span class="about__label">Focus</span>
+                     <span class="about__value">Flutter · Android · Web · Backend</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Featured <span>projects</span></h2>
+
+            <div class="projects__container container">
+               <div class="swiper projects__swiper" aria-label="Projects slider">
+                  <div class="swiper-wrapper">
+                    <article class="projects__card swiper-slide">
+                        <div class="projects__thumb">
+                           <i class="ri-restaurant-2-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="projects__title">Food Ordering App</h3>
+                        <p class="projects__description">
+                           Flutter based food ordering Android app with clean UI, cart, and order tracking flow.
+                        </p>
+                        <div class="projects__meta">
+                           <span class="tag tag--small">Flutter</span>
+                           <span class="tag tag--small">Android</span>
+                           <span class="tag tag--small">Firebase</span>
+                        </div>
+                        <div class="projects__links">
+                           <a class="projects__link" href="#" target="_blank" rel="noreferrer">Demo <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                           <a class="projects__link" href="https://github.com/priyanshukateshiya" target="_blank" rel="noreferrer">Code <i class="ri-github-line" aria-hidden="true"></i></a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="projects__thumb">
+                           <i class="ri-calendar-event-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="projects__title">Event Management System</h3>
+                        <p class="projects__description">
+                           PHP based event management web app to manage registrations, events and admin dashboard.
+                        </p>
+                        <div class="projects__meta">
+                           <span class="tag tag--small">PHP</span>
+                           <span class="tag tag--small">MySQL</span>
+                           <span class="tag tag--small">Bootstrap</span>
+                        </div>
+                        <div class="projects__links">
+                           <a class="projects__link" href="#" target="_blank" rel="noreferrer">Live <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                           <a class="projects__link" href="https://github.com/priyanshukateshiya" target="_blank" rel="noreferrer">Code <i class="ri-github-line" aria-hidden="true"></i></a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="projects__thumb">
+                           <i class="ri-code-box-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="projects__title">Portfolio Website</h3>
+                        <p class="projects__description">
+                           Responsive personal portfolio site with smooth animations and clean sections for skills and work.
+                        </p>
+                        <div class="projects__meta">
+                           <span class="tag tag--small">HTML</span>
+                           <span class="tag tag--small">CSS</span>
+                           <span class="tag tag--small">JavaScript</span>
+                        </div>
+                        <div class="projects__links">
+                           <a class="projects__link" href="#" target="_blank" rel="noreferrer">Live <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                           <a class="projects__link" href="https://github.com/priyanshukateshiya" target="_blank" rel="noreferrer">Code <i class="ri-github-line" aria-hidden="true"></i></a>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="projects__pagination swiper-pagination"></div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== WORK ====================-->
+         <section class="work section">
+            <h2 class="section__title">My <span>work</span></h2>
+
+            <div class="work__container container">
+               <div class="work__tabs" role="tablist" aria-label="Work tabs">
+                  <button class="work__tab is-active" data-target="#experience" type="button" role="tab" aria-selected="true">Experience</button>
+                  <button class="work__tab" data-target="#education" type="button" role="tab" aria-selected="false">Education</button>
+               </div>
+
+               <div class="work__content">
+                  <div class="work__panel is-active" id="experience" data-content role="tabpanel">
+                     <div class="work__item">
+                        <h3 class="work__title">Flutter & Android Developer</h3>
+                        <p class="work__subtitle">Freelance · 2023 — Present</p>
+                        <p class="work__text">
+                           Building food ordering and utility apps using Flutter, Firebase and clean UI patterns.
+                        </p>
+                     </div>
+
+                     <div class="work__item">
+                        <h3 class="work__title">Web Developer</h3>
+                        <p class="work__subtitle">Personal & client projects</p>
+                        <p class="work__text">
+                           Creating responsive websites and PHP based systems like an event management portal.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="work__panel" id="education" data-content role="tabpanel">
+                     <div class="work__item">
+                        <h3 class="work__title">Diploma in Computer Engineering</h3>
+                        <p class="work__subtitle">RK University · 2022 – 2025 · Completed</p>
+                        <p class="work__text">
+                           Completed diploma in Computer Engineering with focus on programming, databases and basic
+                           software development concepts.
+                        </p>
+                     </div>
+
+                     <div class="work__item">
+                        <h3 class="work__title">B.Tech in Computer Engineering</h3>
+                        <p class="work__subtitle">RK University · 2025 – Present · 4th semester running</p>
+                        <p class="work__text">
+                           Currently pursuing B.Tech, learning advanced subjects like data structures, web technologies
+                           and mobile app development.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <h2 class="section__title">Services <span>I offer</span></h2>
+
+            <div class="services__container container grid">
+               <article class="services__item">
+                  <button class="services__header" type="button" aria-expanded="false">
+                     <span class="services__icon"><i class="ri-palette-line" aria-hidden="true"></i></span>
+                     <span class="services__name">UI Implementation</span>
+                     <span class="services__chev"><i class="ri-add-line" aria-hidden="true"></i></span>
+                  </button>
+                  <div class="services__body" hidden>
+                     <p>Pixel-perfect HTML/CSS from Figma with responsive behavior.</p>
+                  </div>
+               </article>
+
+               <article class="services__item">
+                  <button class="services__header" type="button" aria-expanded="false">
+                     <span class="services__icon"><i class="ri-speed-up-line" aria-hidden="true"></i></span>
+                     <span class="services__name">Performance</span>
+                     <span class="services__chev"><i class="ri-add-line" aria-hidden="true"></i></span>
+                  </button>
+                  <div class="services__body" hidden>
+                     <p>Improve loading speed, accessibility, and best practices.</p>
+                  </div>
+               </article>
+
+               <article class="services__item">
+                  <button class="services__header" type="button" aria-expanded="false">
+                     <span class="services__icon"><i class="ri-code-s-slash-line" aria-hidden="true"></i></span>
+                     <span class="services__name">Frontend Features</span>
+                     <span class="services__chev"><i class="ri-add-line" aria-hidden="true"></i></span>
+                  </button>
+                  <div class="services__body" hidden>
+                     <p>Interactive components, forms, sliders, and animations.</p>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIALS ====================-->
+         <section class="testimonials section">
+            <h2 class="section__title">What clients <span>say</span></h2>
+
+            <div class="testimonials__container container">
+               <div class="testimonials__track" id="testimonialsTrack" aria-label="Testimonials">
+                  <article class="testimonials__card">
+                     <p class="testimonials__text">“Clean UI and quick delivery. Great communication.”</p>
+                     <p class="testimonials__author">— Client A</p>
+                  </article>
+                  <article class="testimonials__card">
+                     <p class="testimonials__text">“Responsive and smooth animations. Exactly what we needed.”</p>
+                     <p class="testimonials__author">— Client B</p>
+                  </article>
+                  <article class="testimonials__card">
+                     <p class="testimonials__text">“Super professional and helpful suggestions for UX.”</p>
+                     <p class="testimonials__author">— Client C</p>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Let’s <span>talk</span></h2>
+
+            <div class="contact__container container grid">
+               <div class="contact__content">
+                  <p class="contact__text">
+                     Want to build a website or improve an existing one? Send me a message and I’ll reply soon.
+                  </p>
+
+                  <div class="contact__email">
+                     <span class="contact__email-label">Email</span>
+                     <div class="contact__email-row">
+                        <code class="contact__email-value" id="contactEmail">kateshiyapriyamshu8@email.com</code>
+                        <button class="button button--small button--ghost" id="copyEmail" type="button">
+                           Copy
+                        </button>
+                     </div>
+                     <p class="contact__hint" id="copyHint" role="status" aria-live="polite"></p>
+                  </div>
+
+                  <div class="contact__cta">
+                     <a class="button" href="mailto:you@email.com">Email me</a>
+                     <a class="button button--ghost" href="#home">Back to top</a>
+                  </div>
+               </div>
+
+               <form class="contact__form" action="#" onsubmit="return false;">
+                  <div class="contact__field">
+                     <label class="contact__label" for="name">Name</label>
+                     <input class="contact__input" id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+                  </div>
+                  <div class="contact__field">
+                     <label class="contact__label" for="message">Message</label>
+                     <textarea class="contact__input contact__textarea" id="message" name="message" placeholder="Tell me about your project"></textarea>
+                  </div>
+                  <button class="button" type="button">Send (demo)</button>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer grid">
+         <div class="footer__container container grid">
+            <p class="footer__copy">
+               © <span id="year"></span> Your Name. All rights reserved.
+            </p>
+            <div class="footer__links">
+               <a href="#home" class="footer__link">Home</a>
+               <a href="#projects" class="footer__link">Projects</a>
+               <a href="#contact" class="footer__link">Contact</a>
+            </div>
+         </div>
+      </footer>
+      
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== ANIME JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
